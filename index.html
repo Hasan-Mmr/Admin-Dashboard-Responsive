@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Admin Dashboard</title>
+      <script
+         type="module"
+         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+         nomodule
+         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+      <link rel="stylesheet" href="./style.css" />
+      <script src="./script.js" defer></script>
+   </head>
+   <body>
+      <div class="container dark">
+         <div class="overlay"></div>
+         <div class="burger">
+            <div class="burger__bar top"></div>
+            <div class="burger__bar middle"></div>
+            <div class="burger__bar bottom"></div>
+         </div>
+         <aside class="menu__wraper">
+            <div class="menu__state__indicator">
+               <ion-icon name="chevron-forward-outline"></ion-icon>
+            </div>
+
+            <ul class="menu">
+               <div class="menu__dots__wraper">
+                  <span class="menu__dots red"></span
+                  ><span class="menu__dots yellow"></span
+                  ><span class="menu__dots green"></span>
+               </div>
+               <li class="menu__item logo">
+                  <a href="#">
+                     <ion-icon name="color-filter-outline"></ion-icon>
+                     <span class="menu__item__title"
+                        >Your <span>Company</span></span
+                     >
+                  </a>
+               </li>
+               <li class="menu__item Dashboard active">
+                  <a href="#">
+                     <ion-icon name="bar-chart-outline"></ion-icon>
+                     <span>Dashboard</span>
+                  </a>
+               </li>
+               <li class="menu__item task">
+                  <a href="#">
+                     <ion-icon name="create-outline"></ion-icon>
+                     <span>Task</span>
+                     <span class="count">4</span>
+                  </a>
+               </li>
+               <li class="menu__item activity">
+                  <a href="#">
+                     <ion-icon name="pulse-outline"></ion-icon>
+                     <span>Activity</span>
+                  </a>
+               </li>
+               <li class="menu__item users">
+                  <a href="#">
+                     <ion-icon name="person-outline"></ion-icon>
+                     <span>Users</span>
+                  </a>
+               </li>
+               <li class="menu__item notification">
+                  <a href="#">
+                     <ion-icon name="notifications-outline"></ion-icon>
+                     <span>Notifiation</span>
+                     <span class="count">19</span>
+                  </a>
+               </li>
+               <li class="menu__item setting">
+                  <a href="#">
+                     <ion-icon name="settings-outline"></ion-icon>
+                     <span>Setting</span>
+                  </a>
+               </li>
+               <li class="menu__item admin">
+                  <a href="#">
+                     <img src="p1.jpg" alt="" class="menu__img" />
+                     <span>Hsn.Mmr</span>
+                  </a>
+               </li>
+               <li class="menu__item logout">
+                  <a href="#">
+                     <ion-icon name="log-out-outline"></ion-icon>
+                     <span>Logout</span>
+                  </a>
+               </li>
+            </ul>
+         </aside>
+         <main class="main__wraper">
+            <div class="main__toggle">
+               <input
+                  type="checkbox"
+                  id="toggle"
+                  class="toggle__input"
+                  checked
+               />
+               <label class="toggle__label" for="toggle">
+                  <div class="indicator"></div>
+                  <div class="sun">
+                     <ion-icon name="sunny"></ion-icon>
+                  </div>
+                  <div class="moon">
+                     <ion-icon name="moon"></ion-icon>
+                  </div>
+               </label>
+            </div>
+            <h3 class="main__title">Dashboard</h3>
+            <div class="main__body">
+               <div class="main__column__large">
+                  <div class="main__input__wraper">
+                     <input class="main__input" type="date" name="" id="" />
+                  </div>
+                  <div class="main__item analytic">
+                     <div class="main__item__detail">
+                        <div class="main__item__icon">
+                           <ion-icon name="cash-outline"></ion-icon>
+                        </div>
+                        <div class="main__item__title">Total Sales</div>
+                        <div class="main__item__price">$25,075</div>
+                        <div class="main__item__date">Last 24 Hours</div>
+                     </div>
+                     <div class="main__item__chart" style="--p: 78">
+                        <div class="item__chart">
+                           <div class="item__chart__inner"></div>
+                           <div class="item__chart__cap__first"></div>
+                           <div class="item__chart__cap__second"></div>
+                           <div class="item__chart__value">78%</div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="main__item analytic">
+                     <div class="main__item__detail">
+                        <div class="main__item__icon">
+                           <ion-icon name="options-outline"></ion-icon>
+                        </div>
+                        <div class="main__item__title">Total Expences</div>
+                        <div class="main__item__price">$11,030</div>
+                        <div class="main__item__date">Last 24 Hours</div>
+                     </div>
+                     <div class="main__item__chart" style="--p: 66">
+                        <div class="item__chart">
+                           <div class="item__chart__inner"></div>
+                           <div class="item__chart__cap__first"></div>
+                           <div class="item__chart__cap__second"></div>
+                           <div class="item__chart__value">66%</div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="main__item analytic">
+                     <div class="main__item__detail">
+                        <div class="main__item__icon">
+                           <ion-icon name="swap-vertical-outline"></ion-icon>
+                        </div>
+                        <div class="main__item__title">Total Income</div>
+                        <div class="main__item__price">$14,045</div>
+                        <div class="main__item__date">Last 24 Hours</div>
+                     </div>
+                     <div class="main__item__chart" style="--p: 83">
+                        <div class="item__chart">
+                           <div class="item__chart__inner"></div>
+                           <div class="item__chart__cap__first"></div>
+                           <div class="item__chart__cap__second"></div>
+                           <div class="item__chart__value">83%</div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="order__wraper">
+                     <h4 class="item__title">Recent Orders</h4>
+                     <div class="main__item order">
+                        <div class="order__item">
+                           <div class="order__item__id">
+                              <div class="order__item__name">Product Name</div>
+                              <div class="order__item__number">
+                                 Product Number
+                              </div>
+                           </div>
+                           <div class="oreder__item__state">
+                              <div class="order__item__payment">Payment</div>
+                              <div class="order__item__status">Status</div>
+                           </div>
+                        </div>
+                        <div class="order__item">
+                           <div class="order__item__id">
+                              <div class="order__item__name">Mackbook Pro</div>
+                              <div class="order__item__number">44556601</div>
+                           </div>
+                           <div class="oreder__item__state">
+                              <div class="order__item__payment green">Paid</div>
+                              <div class="order__item__status green">
+                                 Delivered
+                              </div>
+                           </div>
+                        </div>
+                        <div class="order__item">
+                           <div class="order__item__id">
+                              <div class="order__item__name">
+                                 Iphone 13 Pro Max
+                              </div>
+                              <div class="order__item__number">44556602</div>
+                           </div>
+                           <div class="oreder__item__state">
+                              <div class="order__item__payment red">
+                                 Refunded
+                              </div>
+                              <div class="order__item__status red">
+                                 Declined
+                              </div>
+                           </div>
+                        </div>
+                        <div class="order__item">
+                           <div class="order__item__id">
+                              <div class="order__item__name">
+                                 Lenovo Legion 5 Pro
+                              </div>
+                              <div class="order__item__number">44556603</div>
+                           </div>
+                           <div class="oreder__item__state">
+                              <div class="order__item__payment yellow">Due</div>
+                              <div class="order__item__status yellow">
+                                 Pending
+                              </div>
+                           </div>
+                        </div>
+                        <div class="order__item">
+                           <div class="order__item__id">
+                              <div class="order__item__name">
+                                 Galaxy S22 Ultra
+                              </div>
+                              <div class="order__item__number">44556604</div>
+                           </div>
+                           <div class="oreder__item__state">
+                              <div class="order__item__payment green">Paid</div>
+                              <div class="order__item__status yellow">
+                                 Pending
+                              </div>
+                           </div>
+                        </div>
+                        <div class="order__item">
+                           <div class="order__item__id">
+                              <div class="order__item__name">Dell XPS 15</div>
+                              <div class="order__item__number">44556605</div>
+                           </div>
+                           <div class="oreder__item__state">
+                              <div class="order__item__payment green">Paid</div>
+                              <div class="order__item__status green">
+                                 Delivered
+                              </div>
+                           </div>
+                        </div>
+                        <div class="order__item">
+                           <div class="order__item__id">
+                              <div class="order__item__name">
+                                 LG UltraFine 4K Monitor
+                              </div>
+                              <div class="order__item__number">44556606</div>
+                           </div>
+                           <div class="oreder__item__state">
+                              <div class="order__item__payment yellow">Due</div>
+                              <div class="order__item__status yellow">
+                                 Pending
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="show__all">
+                     <div>Show All</div>
+                  </div>
+               </div>
+               <div class="main__column__small">
+                  <div class="update">
+                     <h4 class="update__title">Recent Updates</h4>
+                     <div class="main__item">
+                        <div class="update__item">
+                           <img
+                              class="update__img"
+                              src="./Mike_Tyson.jpg"
+                              alt=""
+                           />
+                           <div class="update__body">
+                              <span class="update__body__name">Mike Tyson</span>
+                              Recived his golden boxing gloves.
+                              <div class="update__body__time">
+                                 2 Minutes Ago
+                              </div>
+                           </div>
+                        </div>
+                        <div class="update__item">
+                           <img class="update__img" src="./adele.jpg" alt="" />
+                           <div class="update__body">
+                              <span class="update__body__name">Adele</span>
+                              Canceled her order of iphone 13 pro max.
+                              <div class="update__body__time">
+                                 5 Minutes Ago
+                              </div>
+                           </div>
+                        </div>
+                        <div class="update__item">
+                           <img
+                              class="update__img"
+                              src="./brad-pitt.jpg"
+                              alt=""
+                           />
+                           <div class="update__body">
+                              <span class="update__body__name">Brad Pitt</span>
+                              Recived his order of low latancy gaming monitor.
+                              <div class="update__body__time">
+                                 11 Minutes Ago
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="analytics">
+                     <h4 class="analytics__title">Sales Analytics</h4>
+                     <div class="main__item">
+                        <div class="analytics__item__icon">
+                           <ion-icon name="cart"></ion-icon>
+                        </div>
+                        <div class="analytics__item__desc">
+                           <div class="analytics__item__title">
+                              Online Orders
+                           </div>
+                           <div class="analytics__item__time">
+                              Last 24 Hours
+                           </div>
+                        </div>
+                        <div class="analytics__item__percent">+33%</div>
+                        <div class="analytics__item__amount">283</div>
+                     </div>
+                     <div class="main__item">
+                        <div class="analytics__item__icon">
+                           <ion-icon name="bag-handle"></ion-icon>
+                        </div>
+                        <div class="analytics__item__desc">
+                           <div class="analytics__item__title">
+                              Offline Orders
+                           </div>
+                           <div class="analytics__item__time">
+                              Last 24 Hours
+                           </div>
+                        </div>
+                        <div class="analytics__item__percent">-12%</div>
+                        <div class="analytics__item__amount">107</div>
+                     </div>
+                     <div class="main__item">
+                        <div class="analytics__item__icon">
+                           <ion-icon name="person-add"></ion-icon>
+                        </div>
+                        <div class="analytics__item__desc">
+                           <div class="analytics__item__title">
+                              New Customer
+                           </div>
+                           <div class="analytics__item__time">
+                              Last 24 Hours
+                           </div>
+                        </div>
+                        <div class="analytics__item__percent">+41%</div>
+                        <div class="analytics__item__amount">195</div>
+                     </div>
+                     <div class="analytics__item__add">
+                        <span>&plus;</span> Add Product
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </main>
+      </div>
+   </body>
+</html>
